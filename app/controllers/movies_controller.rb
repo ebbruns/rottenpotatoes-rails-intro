@@ -19,7 +19,7 @@ class MoviesController < ApplicationController
   end
 
   def create
-    @movie = Movie.create!(movie_params)
+    @movie = Movie.create!(movie_params).hilite
     flash[:notice] = "#{@movie.title} was successfully created."
     redirect_to movies_path
   end
