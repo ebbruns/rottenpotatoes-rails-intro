@@ -15,6 +15,6 @@
  */
  
  css
- #movies .hilite {
+ table#movies th.hilite {
      background-color: yellow;
  }
